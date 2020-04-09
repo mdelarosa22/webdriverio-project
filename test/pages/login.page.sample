@@ -1,0 +1,31 @@
+const { assert } = require('chai');
+const reporter = require('@wdio/allure-reporter')
+const Page = require('./page');
+const app = require('../app');
+const { validEmail } = require('../models/utils')
+
+
+class Login extends Page {
+  constructor() {
+    super();
+  }
+
+  open() {
+    super.open(app.env + '/login')
+  }
+
+  assertLogoFigo(){
+    const logoFigo =  $("img[src='/Themes/DefaultClean/Content/images/Both/UI/petcloud_hq.png']");
+    assert.isOk(logoFigo.isDisplayed(),'Logo is not being displayed');
+  }
+
+  watchVideo(){
+    const parent = browser.getWindowHandle();
+    $('.FontAwesome').click();
+    browser.pause(2000);
+    browser.switchToWindow(parent);
+  }
+
+}
+
+module.exports = Login;

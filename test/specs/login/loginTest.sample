@@ -1,0 +1,17 @@
+const Login = require('../../../pages/login.page');
+const { assert } = require('chai');
+
+const login = new Login();
+
+describe('Login', () => {
+  it('Load login page', () => {
+    login.open();
+
+    assert.strictEqual(
+      browser.getTitle(),
+      'MyPetCloud. Login',
+      'Login page failed to load',
+    );
+  })
+
+});
