@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx wdio wdio.conf.js",
+    "allure": "allure generate ./allure-results --clean && allure open"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,10 @@
     "@wdio/spec-reporter": "^6.0.14",
     "@wdio/sync": "^6.0.14",
     "chromedriver": "^80.0.2",
-    "wdio-chromedriver-service": "^6.0.1"
+    "wdio-chromedriver-service": "^6.0.1",
+    "@wdio/allure-reporter": "^5.0.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
   }
 }
