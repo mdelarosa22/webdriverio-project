@@ -2,7 +2,7 @@ class Page {
     constructor() { }
   
     open(path) {
-      browser.maximizeWindow()
+      browser.maximizeWindow();
       browser.url(path)
     }
   }

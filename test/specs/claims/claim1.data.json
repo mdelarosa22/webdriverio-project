@@ -1,0 +1,28 @@
+{
+    "user":{
+        "user":"rockstar700@mac.com.xx",
+        "password":"test123"
+    },
+    "pets":[
+        {
+            "name":"Bailey",
+            "idPet":"37838",
+            "selector":"#pet-37838"
+        },
+        {
+            "name":"Thor",
+            "idPet":"37837",
+            "selector":"#pet-37837"
+        }
+    ],
+    "data":{
+        "dateOfLose":"10/02/2020",
+        "amount":"10.00",
+        "anotherPetInsurance":true,
+        "anotherPetInsuranceText":"Test insurance1",
+        "description":"test",
+        "fileClaim":"../testImages/-tmp-testing.jpg",
+        "reinbursementMethod":"check",
+        "summaryName":"Sumary name test"
+    }
+}

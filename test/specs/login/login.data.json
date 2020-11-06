@@ -1,0 +1,19 @@
+{
+    "users": [
+        {
+            "email":"testqamay4111@gmail.com.xx",
+            "password":"test123",
+            "isValid":false
+        },
+        {
+            "email":"testqamay5111@gmail.com.xx",
+            "password":"test1234",
+            "isValid":false
+        },
+        {
+            "email":"ngold70@gmail.com.xx",
+            "password":"test123",
+            "isValid":true
+        }
+    ]
+}
